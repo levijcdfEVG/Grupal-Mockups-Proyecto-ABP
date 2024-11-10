@@ -35,28 +35,39 @@ footer {
 .contenedor {
     text-align: center;
     margin: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
 }
 
 .fila-botones {
     display: inline-block;
     width: 100%;
     max-width: 600px;
-    margin: 10px 0;
+    margin: 40px 0;
+    text-align: center;
 }
 
 .fila-botones .boton {
-    width: 45%;
-    margin: 10px 2.5%;
-    padding: 10px;
+    width: 70%;
+    margin: 30px 2.5%;
+    padding: 40px;
+    font-size: 2.25em;
     border: 1px solid #ccc;
     text-decoration: none;
     color: #333;
     background-color: #f4f4f4;
     display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    height: 150px;
 }
 
 .fila-botones .boton:hover {
     background-color: #e0e0e0;
 }
+
 
 
