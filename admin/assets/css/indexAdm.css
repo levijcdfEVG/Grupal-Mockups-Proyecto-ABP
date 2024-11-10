@@ -75,5 +75,29 @@ footer {
     background-color: #e0e0e0;
 }
 
+/* Media queries para dispositivos móviles */
+@media (max-width: 1506px) {
+    .fila-botones .boton {
+        width: 80%; /* Ajusta el tamaño de los botones, puedes cambiarlo según tu preferencia */
+        margin: 20px auto; /* Centra los botones y ajusta el margen */
+    }
+}
+
+
+@media (max-width: 768px) {
+    .fila-botones .boton {
+        width: 90%; /* Aumenta el ancho de los botones para que ocupen más espacio */
+        margin: 20px auto; /* Centra los botones y reduce el margen entre ellos */
+    }
+}
+
+@media (max-width: 480px) {
+    .fila-botones .boton {
+        width: 95%; /* Los botones ocupan casi todo el ancho disponible */
+        padding: 30px; /* Ajusta el padding para pantallas más pequeñas */
+        font-size: 1.8em; /* Reduce el tamaño del texto */
+    }
+}
+
 
 
