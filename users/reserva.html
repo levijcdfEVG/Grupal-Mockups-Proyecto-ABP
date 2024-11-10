@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <header>
+    <h2>Escuela Virgen de Guadalupe - Fundacion Loyola</h2>
+  </header>
+
+  <main>
+    <form id="registroForm" action="index.html" method=get>
+      <div class="form-group">
+        <label for="dni">DNI</label>
+        <input type="text" id="dni" name="dni" required>
+      </div>
+
+      <div class="form-group">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required>
+      </div>
+
+      <div class="form-group">
+        <label for="apellidos">Apellidos</label>
+        <input type="text" id="apellidos" name="apellidos" required>
+      </div>
+
+      <div class="form-group">
+        <label for="correo">Correo electrónico</label>
+        <input type="email" id="correo" name="correo" required>
+      </div>
+
+      <div class="form-group">
+        <label for="libros">Selecciona tus libros:</label>
+        <div class="checkbox-group">
+          <label>
+            <input type="checkbox" name="libros" value="libro1"> Libro 1
+          </label>
+          <label>
+            <input type="checkbox" name="libros" value="libro2"> Libro 2
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <button type="submit">Enviar</button>
+      </div>
+    </form>
+  </main>
+
+  <footer>
+    <p>COPYRIGHT © 2024 FUNDACIÓN LOYOLA. 
+      TODOS LOS DERECHOS RESERVADOS</p>
+  </footer>
+</body>
+</html>
