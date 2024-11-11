@@ -109,6 +109,6 @@ form .button-group {
 /* Media Query para pantallas pequeñas */
 @media screen and (max-width: 768px) {
     main {
-        width: 100%;
+        width: 100%; /*Haz con que el main ocupe el 100% del ancho del body en los dispositivos más pequeños*/
     }
 }

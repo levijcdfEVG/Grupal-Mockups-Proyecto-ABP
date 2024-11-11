@@ -1,7 +1,7 @@
-/*
-    Estilos de elemento
-*/
-body {
+/* ============================
+   Estilos de elemento
+   ============================ */
+   body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -27,9 +27,9 @@ footer {
     height: 40px;
 }
 
-/*
-    Estilos de Clase
-*/
+/* ============================
+   Estilos de Clase
+   ============================ */
 .cerrar-sesion {
     position: absolute;
     right: 20px;
@@ -44,7 +44,7 @@ footer {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     width: 80%;
 }
 
@@ -75,19 +75,20 @@ footer {
     background-color: #e0e0e0;
 }
 
-/* Media queries para dispositivos móviles */
+/* ============================
+   Media queries para dispositivos móviles
+   ============================ */
 @media (max-width: 1506px) {
     .fila-botones .boton {
-        width: 80%; /* Ajusta el tamaño de los botones, puedes cambiarlo según tu preferencia */
+        width: 80%; /* Ajusta el tamaño de los botones */
         margin: 20px auto; /* Centra los botones y ajusta el margen */
     }
 }
 
-
 @media (max-width: 768px) {
     .fila-botones .boton {
-        width: 90%; /* Aumenta el ancho de los botones para que ocupen más espacio */
-        margin: 20px auto; /* Centra los botones y reduce el margen entre ellos */
+        width: 90%; /* Aumenta el ancho de los botones */
+        margin: 20px auto; /* Centra los botones y reduce el margen */
     }
 }
 
@@ -98,6 +99,3 @@ footer {
         font-size: 1.8em; /* Reduce el tamaño del texto */
     }
 }
-
-
-
