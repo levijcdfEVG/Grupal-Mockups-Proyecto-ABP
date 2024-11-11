@@ -22,12 +22,15 @@ header{
   text-align: center;
   padding-top: 30px;
 }
-header p{
+header a{
   position: absolute;
   right: 5%;
   top:4%;
+  text-decoration: none;
 } 
-
+header a:visited{
+  color:inherit;
+}
 main{
   text-align: center;
   padding: 100px;
@@ -69,8 +72,7 @@ td{
 }
 
 footer{
-  background-color: #203f9d;
-  color: white;
+  color: black;
   position: absolute;
   top: 95%;
   text-align: center;
