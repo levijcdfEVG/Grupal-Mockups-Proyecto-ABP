@@ -1,3 +1,4 @@
+/* Estilos Generales */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -5,6 +6,7 @@ body {
     background-color: #f8f8f8;
 }
 
+/* Estilos para el encabezado */
 header {
     background-color: #255e7e;
     padding: 20px;
@@ -14,6 +16,7 @@ header {
     font-weight: bold;
 }
 
+/* Estilos del formulario */
 form {
     max-width: 600px;
     margin: 40px auto;
@@ -29,6 +32,7 @@ form label {
     font-weight: bold;
 }
 
+/* Estilos comunes para inputs y select */
 form input,
 form select {
     width: 100%;
@@ -39,16 +43,19 @@ form select {
     box-sizing: border-box;
 }
 
+/* Estilos específicos para checkbox y radio */
 form input[type="checkbox"],
 form input[type="radio"] {
     margin-right: 5px;
 }
 
+/* Agrupación de elementos tipo radio y checkbox */
 form .radio-group,
 form .checkbox-group {
     margin-bottom: 15px;
 }
 
+/* Estilos para el botón y submit */
 form input[type="submit"],
 form button {
     background-color: #DA0063;
@@ -66,22 +73,25 @@ form button:hover {
     background-color: #b80050;
 }
 
+/* Estilos de la caja de contenedor */
 .container {
     padding: 20px;
     text-align: center;
 }
 
+/* Estilo del título dentro del contenedor */
 .container h1 {
     margin-bottom: 20px;
     font-size: 28px;
 }
 
-#tituloForm{
+/* Estilo específico para el título del formulario */
+#tituloForm {
     text-align: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-
+/* Estilos para los elementos de tipo radio y checkbox */
 form input[type="radio"] {
     margin-left: 10px;
 }
@@ -90,11 +100,13 @@ form input[type="checkbox"] {
     margin-bottom: 10px;
 }
 
+/* Estilos para el grupo de botones */
 form .button-group {
     text-align: center;
 }
 
 
+/* Media Query para pantallas pequeñas */
 @media screen and (max-width: 768px) {
     main {
         width: 100%;
