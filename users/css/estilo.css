@@ -1,3 +1,9 @@
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////// 
+                                        ESTILO GENERAL
+/////////////////////////////////////////////////////////////////////////////////////////////////
+*/
+
 *{
   margin: 0;
 }
@@ -7,21 +13,47 @@ html{
   height: 1080px;
 }
 body{
+  position: relative;  /* Pongo el position relative para poder poner el footer absoluto a él*/
   width: 100%;
   height: 100%;
   background-color: white;
   font-family: Arial, sans-serif;
 }
 
+/* HEADER */
+
 header{
+  position: relative;  
   width: 100%;
-  height: 100px;
+  height: 10%;
   background-color: #203f9d;
   font-size: 1.5em;
   color: white;
   text-align: center;
-  padding-top: 30px;
+  padding-top: 40px;
 }
+header a{
+  position: absolute;
+  color:white;
+  font-size: 0.75em;
+  right:5%;
+  top: 40%;
+  text-decoration: none;
+} 
+header a:hover{
+  cursor: pointer;
+}
+header a:visited{
+  color:inherit;
+}
+
+h2{   
+  width: 50%;
+  margin-left:26%;
+  padding-top:px;
+}
+
+/* MAIN */ 
 
 main{
   text-align: center;
@@ -33,15 +65,16 @@ h1{
   font-weight: bold;
   margin-bottom: 5%;
 }
+
 h3{
   margin-bottom: 5%;
 }
 
 #contenedor{
-
   width: 50%;
   margin: 0 25%;
 }
+
 .opcion{
   height: 90px;
   width: 20%;
@@ -50,6 +83,7 @@ h3{
   padding-top: 60px;
   margin:0 55px;
 }
+
 .opcion a {
   display: block; 
   text-decoration: none; 
@@ -72,12 +106,15 @@ h3{
 
 footer{
   position: absolute;
-  top: 95%;
+  top:95%;
   text-align: center;
   width: 100%;
   font-size: 0.5em;
   font-style: italic;
 }
+
+
+/* BOTÓN PARA VOLVER AL INDEX */
 
 #volver{
   display: block; 
@@ -96,6 +133,9 @@ footer{
   box-sizing: border-box; 
 }
 
+
+/* PÁGINA CONTACTO */ 
+
 .contacto{
   background-color: white;
   width: 100%;
@@ -109,6 +149,8 @@ footer{
   font-weight: bold;
 }
 
+/* PÁGINA FORMULARIO */ 
+  
 form {
   background-color:#203f9d;
   padding: 30px;
@@ -165,7 +207,14 @@ button {
 button:hover {
   background-color: green;
 }
-/* MEDIA QUERY PARA TABLETS*/ 
+
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////// 
+                                        ZONA MEDIA QUERIES
+/////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+MEDIA QUERY PARA TABLETS*/ 
 
 @media (max-width: 900px){
   html{
@@ -175,8 +224,16 @@ button:hover {
   header{
     font-size: 1.25em;
   }
+
+  header p{
+    margin: 10px 40%;
+  }
+
   h1{
     font-size: 2em;
+  }
+  h2{
+    font-size: 1em;
   }
   h3{
     font-size: 1em;
@@ -190,9 +247,7 @@ button:hover {
     right: 35%;
   }
 }
-
-
-/* MEDIA QUERY PARA TELÉFONOS */ 
+ /*  MEDIA QUERY PARA TELÉFONOS */ 
 
 @media (max-width: 500px){
 
@@ -202,6 +257,10 @@ button:hover {
   }
   header{
     font-size: 0.75em;
+  }
+  header p{
+    margin: 10px 38%;
+    width: 100px;
   }
   h1{
     font-size: 1.5em;
@@ -227,38 +286,38 @@ button:hover {
     font-size: 1.75em;
   }
   form {
-    width: 100%; /* Hacer el formulario casi del 100% del ancho */
+    width: 100%; 
     padding: 15px;
   }
 
   .form-group {
-    margin-bottom: 12px; /* Reducir el margen entre los campos */
+    margin-bottom: 12px; 
   }
 
   label {
-    font-size: 1em; /* Ajustar tamaño del label para pantallas pequeñas */
+    font-size: 1em; 
   }
 
   input[type="text"],
   input[type="email"] {
-    font-size: 0.8em; /* Reducir tamaño de fuente de los campos */
+    font-size: 0.8em; 
   }
 
   button {
-    width: 50%; /* Asegurar que el botón se ajuste al tamaño de la pantalla */
-    padding: 8px 16px; /* Ajustar el padding para pantallas muy pequeñas */
-    font-size: 1em; /* Mantener un tamaño de fuente legible */
+    width: 50%; 
+    padding: 8px 16px; 
+    font-size: 1em; 
     margin: 6% 25%;
   }
 
   .checkbox-group {
     height: auto;
-    text-align: center; /* Alineamos mejor los checkboxes */
+    text-align: center; 
   }
 
   .checkbox-group label {
     font-size: 1em;
     margin-top: 5%;
-    display: block; /* Aseguramos que cada checkbox esté en su propia línea */
+    display: block; 
   }
 }

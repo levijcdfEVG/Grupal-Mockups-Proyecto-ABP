@@ -4,7 +4,7 @@ main{
     position: fixed;
     width: 50%;
     top: 50%;
-    left: 44%;
+    left: 50%;
     transform: translate(-50%,-50%);
 }
 
@@ -43,7 +43,6 @@ header > h1{
 
 #formularioPrincipal > label,input{
     display: block;
-    width: 400px;
 }
 
 #botonDeReserva{
@@ -56,19 +55,10 @@ header > h1{
 
 #contenedorIzquierda{
     float: left;
-
+    margin-right: 60px;
 
 }
 
 #contenedorDerecha{
     float: left;
 }
-
-/*Estilos de Clase*/
-
-.radioPago{
-    display: inline;
-
-}
-
-
