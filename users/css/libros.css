@@ -1,177 +1,164 @@
 *{
-    margin: 0;
-  }
-  
+  margin: 0;
+}
+
+html{
+  width: 1920px;
+  height: 1080px;
+}
+body{
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  font-family: Arial, sans-serif;
+}
+
+header{
+  width: 100%;
+  height: 100px;
+  background-color: #203f9d;
+  font-size: 1.5em;
+  color: white;
+  text-align: center;
+  padding-top: 30px;
+}
+header p{
+  position: absolute;
+  right: 5%;
+  top:4%;
+} 
+
+main{
+  text-align: center;
+  padding: 100px;
+  color: #203f9d;
+}
+h1{
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 5%;
+}
+
+#contenedor{
+  width: 50%;
+  margin: 0 25%;
+}
+
+table{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th{
+  background-color: #203f9d;
+  color: white;
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 15px;
+}
+
+td{
+  width: 1%;
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 15px;
+}
+
+footer{
+  background-color: #203f9d;
+  color: white;
+  position: absolute;
+  top: 95%;
+  text-align: center;
+  width: 100%;
+  height: 5%;
+  font-size: 1em;
+  font-style: italic;
+  padding-top: 10px;
+}
+
+label {
+  font-size: 1.2em;
+  color: white;
+}
+
+#botones{
+  position: absolute;
+  top: 75%;  /* Ajusta esta posición para colocar los botones entre el main y el footer */
+  left: 50%;
+  width: auto;
+  text-align: center;
+  transform: translateX(-50%);
+}
+
+button {
+  background-color: #203f9d;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+button:hover {
+  background-color: green;
+}
+/* MEDIA QUERY PARA TABLETS*/ 
+
+@media (max-width: 900px){
   html{
-    width: 1920px;
-    height: 1080px;
-  }
-  body{
     width: 100%;
     height: 100%;
-    background-color: white;
-    font-family: Arial, sans-serif;
   }
-  
   header{
-    width: 100%;
-    height: 100px;
-    background-color: #203f9d;
-    font-size: 1.5em;
-    color: white;
-    text-align: center;
-    padding-top: 30px;
-  }
-  header p{
-    position: absolute;
-    right: 5%;
-    top:4%;
-  } 
-  
-  main{
-    text-align: center;
-    padding: 100px;
-    color: #203f9d;
+    font-size: 1.25em;
   }
   h1{
-    font-size: 3em;
-    font-weight: bold;
-    margin-bottom: 5%;
+    font-size: 2em;
   }
-  
-  #contenedor{
-    width: 50%;
-    margin: 0 25%;
-  }
+}
 
-  table{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    border: 1px solid black;
-    border-collapse: collapse;
-  }
 
-  th{
-    background-color: #203f9d;
-    color: white;
-    border: 1px solid black;
-    border-collapse: collapse;
-    padding: 15px;
-  }
-  
-  td{
-    width: 1%;
-    border: 1px solid black;
-    border-collapse: collapse;
-    padding: 15px;
-  }
-  
-  footer{
-    background-color: #203f9d;
-    color: white;
-    position: absolute;
-    top: 95%;
-    text-align: center;
+/* MEDIA QUERY PARA TELÉFONOS */ 
+
+@media (max-width: 500px) {
+  html {
     width: 100%;
-    height: 5%;
-    font-size: 1em;
-    font-style: italic;
+    height: 100%;
   }
-  
-  #volver{
-    display: block; 
-    position: absolute;
-    top: 85%;
-    right: 45%;
-    text-decoration: none; 
-    color: white;
-    background-color: #203f9d; 
-    border: 1px solid black;
-    border-radius: 5px; 
-    padding: 10px; 
+  header {
+    font-size: 0.75em;
+    padding: 10px;
+    align-items: center;
+  }
+  header h2 {
+    font-size: 1.75em;
     text-align: center;
-    height: 40px; 
-    width: 10%;
-    box-sizing: border-box; 
   }
-  
-  label {
-    font-size: 1.2em;
-    color: white;
+  header p {
+    font-size: 0.9em;
+    margin-top: 10px;
   }
-  
-  #botones{
-    position: relative;
+  h1 {
+    font-size: 1.5em;
+  }
+  #contenedor {
+    width: 90%;
+    margin: 0 auto;  
   }
 
   button {
-    background-color: #203f9d;
-    color: white;
-    padding: 10px 20px;
-    font-size: 1.2em;
-    margin: 0 43%;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    width: 90%; /* Asegurarse de que los botones ocupen más espacio en pantallas pequeñas */
+    padding: 12px 20px; /* Mayor espacio en botones */
+    font-size: 1.2em; /* Mayor tamaño de fuente para mejor legibilidad */
+    margin: 6% 5%; /* Ajuste de márgenes para que no estén tan pegados */
   }
-  
-  button:hover {
-    background-color: green;
-  }
-  /* MEDIA QUERY PARA TABLETS*/ 
-  
-  @media (max-width: 900px){
-    html{
-      width: 100%;
-      height: 100%;
-    }
-    header{
-      font-size: 1.25em;
-    }
-    h1{
-      font-size: 2em;
-    }
-    h3{
-      font-size: 1em;
-    }
-    #volver{
-      width: 30%;
-      right: 35%;
-    }
-  }
-  
-  
-  /* MEDIA QUERY PARA TELÉFONOS */ 
-  
-  @media (max-width: 500px){
-  
-    html{
-      width: 100%;
-      height: 100%;
-    }
-    header{
-      font-size: 0.75em;
-    }
-    h1{
-      font-size: 1.5em;
-    }
-    #contenedor{
-      width: 100%;
-      margin: 0 10%;
-    }
-  
-    label {
-      font-size: 1em; /* Ajustar tamaño del label para pantallas pequeñas */
-    }
-  
-    button {
-      width: 50%; /* Asegurar que el botón se ajuste al tamaño de la pantalla */
-      padding: 8px 16px; /* Ajustar el padding para pantallas muy pequeñas */
-      font-size: 1em; /* Mantener un tamaño de fuente legible */
-      margin: 6% 25%;
-    }
-  
-  }
-  
+
+}  
