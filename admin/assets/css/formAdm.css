@@ -19,9 +19,10 @@ header{
 
 header > h1{
     text-align: center;
+    font-weight: bold;
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 35%;
     transform: translate(-50%,-50%);
 }
 
@@ -70,6 +71,22 @@ header > h1{
 .radioPago{
     display: inline;
 
+}
+
+
+/*Medias queries*/
+@media (max-width: 768px){
+
+    #formularioPrincipal{
+        width: 100%;
+    }
+
+
+    main{
+        top: 35%;
+        left: 25%;
+        width: 58%;
+    }
 }
 
 
