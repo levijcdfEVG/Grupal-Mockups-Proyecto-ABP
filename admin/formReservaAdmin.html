@@ -26,12 +26,12 @@
                 </label>
                 <br/>
                 <div id="contenedorIzquierda">
-                    <label>
-                        Libro 1: <input type="checkbox" name="libroASeleccionar[]" required/>
-                    </label>
-                    <label>
-                        Libro 2: <input type="checkbox" name="libroASeleccionar[]" required/>
-                    </label>
+                    <label for="libroASeleccionar">Seleccione un libro:</label>
+                    <select name="libroASeleccionar" required>
+                        <option value="">Seleccione una opción</option>
+                        <option value="libro1">Libro 1</option>
+                        <option value="libro2">Libro 2</option>
+                    </select>
                 </div>
                 <div id="contenedorDerecha">
                     <label>Pago</label>
