@@ -34,13 +34,12 @@
                     </select>
                 </div>
                 <div id="contenedorDerecha">
-                    <label>Pago</label>
-                    <label>
-                        Si <input type="radio" name="statusPago"  required/>
-                    </label>
-                    <label>
-                        No <input type="radio" name="statusPago" required/>
-                    </label>
+                    <label for="confirmacionPAgo">Se ha realizado el pago:</label>
+                    <select name="estadoDelPago" required>
+                        <option value="">Seleccione una opción</option>
+                        <option value="pagoConfirmado">Si</option>
+                        <option value="pagoNoConfirmado">No</option>
+                    </select>
                 </div>
                 <br><input type="submit" value="Realizar Reserva" id="botonDeReserva" />
             </form>
